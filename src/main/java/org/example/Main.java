@@ -88,24 +88,42 @@ public class Main {
 //      String methods
 
 //      Find the length of a string
-        System.out.println(myFirstName.length());
+//        System.out.println(myFirstName.length());
 //      Find a character at a specific index
-        System.out.println(myFirstName.charAt(2));
+//        System.out.println(myFirstName.charAt(2));
 //      Replace part of a string
-        System.out.println(myLastName.replace("M", "St"));
+//        System.out.println(myLastName.replace("M", "St"));
 //      Uppercase
-        System.out.println(myLastName.toUpperCase());
+//        System.out.println(myLastName.toUpperCase());
 //      Lowercase
-        System.out.println(myLastName.toLowerCase());
+//        System.out.println(myLastName.toLowerCase());
 //      Compare lexicographically (0 means equal, <0 if less than arg, >0 if greater than arg)
-        System.out.println(myLastName.compareTo(myFirstName));
-        System.out.println(myLastName.compareTo(myMiddleName));
-        System.out.println(myLastName.compareTo("Manley"));
+//        System.out.println(myLastName.compareTo(myFirstName));
+//        System.out.println(myLastName.compareTo(myMiddleName));
+//        System.out.println(myLastName.compareTo("Manley"));
 //      Use compareToIgnoreCase() to ignore case
-        System.out.println(myLastName.compareTo("manley"));
+//        System.out.println(myLastName.compareTo("manley"));
 //      Check if string contains a set of characters
-        System.out.println(myLastName.contains("Man"));
+//        System.out.println(myLastName.contains("Man"));
 //      Checking equality
-        System.out.println(myMiddleName.equals("Banana"));
+//        System.out.println(myMiddleName.equals("Banana"));
+
+//      Converting between data types
+//      Implicit casting (widening) - smaller memory type to larger memory type
+//      byte => short => char => int => long => float => double
+        int num5 = 35;
+        float num6 = num5;
+//        System.out.println(num6);
+
+//      Explicit casting (narrowing) - larger memory type to smaller memory type
+//      double => float => long => int => char => short => byte
+        double num7 = 2342352.7398;
+        int num8 = (int) num7;
+//        System.out.println(num8);
+
+//      Converting strings to numbers
+        String userInputString = "3.14159";
+        float userInputFloat = Float.parseFloat(userInputString);
+//        System.out.println(userInputFloat);
     }
 }
